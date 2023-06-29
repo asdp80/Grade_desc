@@ -9,11 +9,11 @@ int main() {
 		scanf_s("%d", &std[i]);
 	}
 	for (i = 0; i < 4; i++) {
-		for (n = 1; n < 5; n++) {
+		for (n = i+1; n < 5; n++) {
 			if (std[i] < std[n]){
 				k = std[n];
 				std[n] = std[i];
-				std[i] = std[n];
+				std[i] = k;
 			}
 		}
 	}
